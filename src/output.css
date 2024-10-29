@@ -579,14 +579,6 @@ html {
   left: 50%;
 }
 
-.left-0 {
-  left: 0px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -594,11 +586,6 @@ html {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .line-clamp-2 {
@@ -689,14 +676,6 @@ html {
   width: 100%;
 }
 
-.max-w-\[245px\] {
-  max-width: 245px;
-}
-
-.max-w-\[314px\] {
-  max-width: 314px;
-}
-
 .max-w-\[640px\] {
   max-width: 640px;
 }
@@ -742,6 +721,10 @@ html {
   gap: 0.75rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
 }
@@ -750,24 +733,20 @@ html {
   gap: 10px;
 }
 
+.gap-\[21px\] {
+  gap: 21px;
+}
+
 .gap-\[25px\] {
   gap: 25px;
-}
-
-.gap-\[6px\] {
-  gap: 6px;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .gap-\[30px\] {
   gap: 30px;
 }
 
-.gap-\[21px\] {
-  gap: 21px;
+.gap-\[6px\] {
+  gap: 6px;
 }
 
 .overflow-hidden {
@@ -818,6 +797,11 @@ html {
   padding: 1px;
 }
 
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -848,16 +832,6 @@ html {
   padding-bottom: 30px;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -870,12 +844,12 @@ html {
   padding-bottom: 144px;
 }
 
-.pt-\[30px\] {
-  padding-top: 30px;
-}
-
 .pb-\[145px\] {
   padding-bottom: 145px;
+}
+
+.pt-\[30px\] {
+  padding-top: 30px;
 }
 
 .text-center {
@@ -902,17 +876,22 @@ html {
   font-weight: 600;
 }
 
-.leading-\[30px\] {
-  line-height: 30px;
-}
-
 .leading-\[21px\] {
   line-height: 21px;
+}
+
+.leading-\[30px\] {
+  line-height: 30px;
 }
 
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .transition-all {
@@ -948,4 +927,14 @@ html {
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.active\:bg-black:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.active\:text-white:active {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
