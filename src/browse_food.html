@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="output.css">
+    <title>Senna POS - Browse Food</title>
+</head>
+<body>
+    <div id="main" class="flex flex-col gap-[25px] max-w-[640px] w-full mx-auto min-h-screen overflow-hidden pt-[30px] bg-white">
+        <nav id="topbar" class="w-full px-5">
+            <div class="flex justify-between items-center">
+                <h1 class="font-bold text-[24px]">Senna POS</h1>
+                <a href="cart.html">
+                    <img src="assets/images/icons/cart.svg" class="w-6 h-6" alt="icon">
+                </a>
+            </div>
+        </nav>
+        <section id="header" class="w-full px-5">
+            <div class="flex gap-5 items-center border border-black p-[10px]">
+                <div class="w-[90px] h-[76px] shrink-0 overflow-hidden">
+                    <img src="assets/images/thumbnails/thumbnail-1.png" class="w-full h-full object-cover" alt="thumbnail">
+                </div>
+                <h2 class="font-semibold text-[22px]">Table A4</h2>
+            </div>
+        </section>
+        <section id="search-food" class="w-full px-5">
+            <div class="flex flex-col gap-[10px]">
+                <h3>Search food</h3>
+                <form>
+                    <input type="text" class="p-[14px] w-full border border-black placeholder:text-black focus:outline-none" placeholder="Find favorite foods by name">
+                </form>
+            </div>
+        </section>
+        <section id="browse-category" class="w-full flex flex-col gap-3">
+            <h3 class="px-5">Browse by Category</h3>
+            <div class="swiper-category">
+                <div class="swiper-wrapper flex items-center">
+                    <div class="swiper-slide !w-fit p-[1px]">
+                        <a href="food_category.html">
+                            <div class="flex flex-col gap-5 border border-black shrink-0 overflow-hidden p-[10px] items-center">
+                                <div class="w-[50px] h-[50px] shrink-0 overflow-hidden">
+                                    <img src="assets/images/thumbnails/thumbnail-4.png" class="w-full h-full object-cover" alt="thumbnail">
+                                </div>
+                                <div class="flex flex-col gap-[6px] items-center">
+                                    <h4 class="font-semibold">Vegan</h4>
+                                    <p>12,398 foods</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide !w-fit p-[1px]">
+                        <a href="#">
+                            <div class="flex flex-col gap-5 border border-black shrink-0 overflow-hidden p-[10px] items-center">
+                                <div class="w-[50px] h-[50px] shrink-0 overflow-hidden">
+                                    <img src="assets/images/thumbnails/thumbnail-4.png" class="w-full h-full object-cover" alt="thumbnail">
+                                </div>
+                                <div class="flex flex-col gap-[6px] items-center">
+                                    <h4 class="font-semibold">Meats</h4>
+                                    <p>12,398 foods</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide !w-fit p-[1px]">
+                        <a href="#">
+                            <div class="flex flex-col gap-5 border border-black shrink-0 overflow-hidden p-[10px] items-center">
+                                <div class="w-[50px] h-[50px] shrink-0 overflow-hidden">
+                                    <img src="assets/images/thumbnails/thumbnail-4.png" class="w-full h-full object-cover" alt="thumbnail">
+                                </div>
+                                <div class="flex flex-col gap-[6px] items-center">
+                                    <h4 class="font-semibold">Asian</h4>
+                                    <p>12,398 foods</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide !w-fit p-[1px]">
+                        <a href="#">
+                            <div class="flex flex-col gap-5 border border-black shrink-0 overflow-hidden p-[10px] items-center">
+                                <div class="w-[50px] h-[50px] shrink-0 overflow-hidden">
+                                    <img src="assets/images/thumbnails/thumbnail-4.png" class="w-full h-full object-cover" alt="thumbnail">
+                                </div>
+                                <div class="flex flex-col gap-[6px] items-center">
+                                    <h4 class="font-semibold">Vegan</h4>
+                                    <p>12,398 foods</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide !w-fit p-[1px]">
+                        <a href="#">
+                            <div class="flex flex-col gap-5 border border-black shrink-0 overflow-hidden p-[10px] items-center">
+                                <div class="w-[50px] h-[50px] shrink-0 overflow-hidden">
+                                    <img src="assets/images/thumbnails/thumbnail-4.png" class="w-full h-full object-cover" alt="thumbnail">
+                                </div>
+                                <div class="flex flex-col gap-[6px] items-center">
+                                    <h4 class="font-semibold">Vegan</h4>
+                                    <p>12,398 foods</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="popular-foods" class="w-full flex flex-col gap-3">
+            <h3 class="px-5">Popular Foods</h3>
+            <div class="swiper-food">
+                <div class="swiper-wrapper flex items-center">
+                    <div class="swiper-slide !w-fit p-[1px]">
+                        <a href="details.html">
+                            <div class="flex flex-col gap-5 border border-black shrink-0 overflow-hidden p-[10px]">
+                                <div class="w-[195px] h-[110px] shrink-0 overflow-hidden">
+                                    <img src="assets/images/thumbnails/thumbnail-2.png" class="w-full h-full object-cover" alt="thumbnail">
+                                </div>
+                                <div class="flex flex-col gap-[6px]">
+                                    <h4 class="font-semibold">Bubur ayam sapi hati</h4>
+                                    <p>
+                                        Rp 190.000
+                                        <span>• Asian</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide !w-fit p-[1px]">
+                        <a href="details.html">
+                            <div class="flex flex-col gap-5 border border-black shrink-0 overflow-hidden p-[10px]">
+                                <div class="w-[195px] h-[110px] shrink-0 overflow-hidden">
+                                    <img src="assets/images/thumbnails/thumbnail-2.png" class="w-full h-full object-cover" alt="thumbnail">
+                                </div>
+                                <div class="flex flex-col gap-[6px]">
+                                    <h4 class="font-semibold">Bubur ayam sapi hati</h4>
+                                    <p>
+                                        Rp 190.000
+                                        <span>• Asian</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide !w-fit p-[1px]">
+                        <a href="details.html">
+                            <div class="flex flex-col gap-5 border border-black shrink-0 overflow-hidden p-[10px]">
+                                <div class="w-[195px] h-[110px] shrink-0 overflow-hidden">
+                                    <img src="assets/images/thumbnails/thumbnail-2.png" class="w-full h-full object-cover" alt="thumbnail">
+                                </div>
+                                <div class="flex flex-col gap-[6px]">
+                                    <h4 class="font-semibold">Bubur ayam sapi hati</h4>
+                                    <p>
+                                        Rp 190.000
+                                        <span>• Asian</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide !w-fit p-[1px]">
+                        <a href="details.html">
+                            <div class="flex flex-col gap-5 border border-black shrink-0 overflow-hidden p-[10px]">
+                                <div class="w-[195px] h-[110px] shrink-0 overflow-hidden">
+                                    <img src="assets/images/thumbnails/thumbnail-2.png" class="w-full h-full object-cover" alt="thumbnail">
+                                </div>
+                                <div class="flex flex-col gap-[6px]">
+                                    <h4 class="font-semibold">Bubur ayam sapi hati</h4>
+                                    <p>
+                                        Rp 190.000
+                                        <span>• Asian</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="latest-added" class="w-full px-5 pb-[144px]">
+            <div class="flex flex-col gap-3">
+                <h3>Latest Added</h3>
+                <div class="flex flex-col gap-5">
+                    <a href="details.html">
+                        <div class="flex gap-5 items-center p-[10px] border border-black">
+                            <div class="w-[157px] h-[110px] shrink-0 overflow-hidden">
+                                <img src="assets/images/thumbnails/thumbnail-3.png" class="w-full h-full object-cover" alt="thumbnail">
+                            </div>
+                            <div class="flex flex-col gap-[6px]">
+                                <h4 class="font-semibold">Bubur ayam sapi ati tambah nasi</h4>
+                                <p>
+                                    Rp 190.000
+                                    <span>• Asian</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="details.html">
+                        <div class="flex gap-5 items-center p-[10px] border border-black">
+                            <div class="w-[157px] h-[110px] shrink-0 overflow-hidden">
+                                <img src="assets/images/thumbnails/thumbnail-3.png" class="w-full h-full object-cover" alt="thumbnail">
+                            </div>
+                            <div class="flex flex-col gap-[6px]">
+                                <h4 class="font-semibold">Bubur ayam sapi ati tambah nasi</h4>
+                                <p>
+                                    Rp 190.000
+                                    <span>• Asian</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="details.html">
+                        <div class="flex gap-5 items-center p-[10px] border border-black">
+                            <div class="w-[157px] h-[110px] shrink-0 overflow-hidden">
+                                <img src="assets/images/thumbnails/thumbnail-3.png" class="w-full h-full object-cover" alt="thumbnail">
+                            </div>
+                            <div class="flex flex-col gap-[6px]">
+                                <h4 class="font-semibold">Bubur ayam sapi ati tambah nasi</h4>
+                                <p>
+                                    Rp 190.000
+                                    <span>• Asian</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="details.html">
+                        <div class="flex gap-5 items-center p-[10px] border border-black">
+                            <div class="w-[157px] h-[110px] shrink-0 overflow-hidden">
+                                <img src="assets/images/thumbnails/thumbnail-3.png" class="w-full h-full object-cover" alt="thumbnail">
+                            </div>
+                            <div class="flex flex-col gap-[6px]">
+                                <h4 class="font-semibold">Bubur ayam sapi ati tambah nasi</h4>
+                                <p>
+                                    Rp 190.000
+                                    <span>• Asian</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <nav id="navbar" class="px-5 pb-5 fixed bottom-0 left-1/2 transform -translate-x-1/2 mx-auto z-10">
+            <ul class="flex gap-2 items-center justify-between">
+                <li class="w-[83px]">
+                    <a href="#" class="flex flex-col gap-3 items-center p-[10px] bg-white border border-black hover:bg-black hover:text-white transition-all duration-300">
+                        <img src="assets/images/icons/navbar.svg" class="w-6 h-6" alt="icon">
+                        <p class="font-semibold">Browse</p>
+                    </a>
+                </li>
+                <li class="w-[83px]">
+                    <a href="orders.html" class="flex flex-col gap-3 items-center p-[10px] bg-white border border-black hover:bg-black hover:text-white transition-all duration-300">
+                        <img src="assets/images/icons/navbar.svg" class="w-6 h-6" alt="icon">
+                        <p class="font-semibold">Orders</p>
+                    </a>
+                </li>
+                <li class="w-[83px]">
+                    <a href="#" class="flex flex-col gap-3 items-center p-[10px] bg-white border border-black hover:bg-black hover:text-white transition-all duration-300">
+                        <img src="assets/images/icons/navbar.svg" class="w-6 h-6" alt="icon">
+                        <p class="font-semibold">Promo</p>
+                    </a>
+                </li>
+                <li class="w-[83px]">
+                    <a href="#" class="flex flex-col gap-3 items-center p-[10px] bg-white border border-black hover:bg-black hover:text-white transition-all duration-300">
+                        <img src="assets/images/icons/navbar.svg" class="w-6 h-6" alt="icon">
+                        <p class="font-semibold">Helps</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>  
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swipe.js"></script>
+</body>
+</html>
